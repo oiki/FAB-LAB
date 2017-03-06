@@ -73,7 +73,7 @@ void serialtochar()
 		{
 			
 			char c = Serial.read();  //read the next byte of data
-			readString += c;  //append the data to the char variable readString
+			if(IsAscii(c)){readString += c;} //append the data to the char variable readString
 		}
 
 	}
